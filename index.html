@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Calulator</title>
+
+    <!-- Bootstrap CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-3 mb-3">
+      <div class="row text-center">
+        <div class="col"></div>
+
+        <div class="col bg-light p-3 fabinocci">
+          <div class="header">
+            <h1>FIBONACCI SERIES</h1>
+          </div>
+
+          <!-- Output div -->
+          <div>
+            <p id="output"></p>
+            <p id="sum"></p>
+          </div>
+
+          <!-- Inputs div -->
+          <div class="inputs text-center mt-5 mb-5">
+            <label for="input">Nth number to obtain</label>
+            <input type="number" value="" id="input" />
+          </div>
+
+          <div class="buttons mb-4">
+            <button type="button" class="btn btn-primary" onclick="fabinocci()">
+              Generate
+            </button>
+            <button type="submit" class="btn btn-danger" onclick="clearAll()">
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
